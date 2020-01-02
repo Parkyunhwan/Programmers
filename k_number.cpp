@@ -32,7 +32,6 @@ vector<int> solution(vector<int> array, vector<vector<int>> commands) {
         arr_ran = div_arr(array, range);
         range.clear();
         sort(arr_ran.begin(),arr_ran.end());
-        sort(--commands[i][0],--)
         answer.push_back(arr_ran[--commands[i][2]]);
     }
 
